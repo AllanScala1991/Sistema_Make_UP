@@ -1,0 +1,61 @@
+<div class="clientes_menu">
+    <div class="relatorios_info">
+        <div class="registros">
+            <div class="container_name" id="container_relatorios_name">
+                <h1 class="titulos_container">Relatórios</h1>
+            </div>
+            <div class="rel_container">
+                <div class="box_filtros">
+                    <label class="labels">Nome do cliente:</label><input type="text" class="inputs" id="rel_name" placeholder="Digite o nome do cliente">
+                    <label class="labels">Data da venda:</label><input type="text" class="inputs mask_data" id="rel_data" placeholder="00/00/0000">
+                </div>
+                <div class="box_filtros">
+                    <button class="buttons" id="btn_rel_buscar">Buscar</button>
+                    <button class="buttons" id="btn_rel_limpar_filtros">Limpar</button>
+                </div>
+                <div class="table_rel_clientes">
+                    <table id="table_clientes">
+                        <tr>
+                            <th>Cliente</th>
+                            <th>Data</th>
+                            <th>Serviços</th>
+                            <th>Saúde</th>
+                            <th>Funcionário</th>
+                            <th>Retoque</th>
+                            <th>Data Retoque</th>
+                            <th>Valor</th>
+                        </tr>
+                    </table>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="cliente_info_container">
+        <div class="cliente_info_box">
+            <div class="box_clientes">
+                <label class="labels">Cliente:</label> <input type="text" class="inputs" id="set_cncliente" readonly>
+                <label class="labels">Data:</label> <input type="text" class="inputs" id="set_cdata" readonly>
+            </div>
+
+            <div class="box_clientes box_rel">
+                <label class="labels">Serviços:</label> <div id="ctn_box_list" class="ctns"></div>
+                <label class="labels">Saúde:</label> <div id="ctn2_box_list" class="ctns"></div>
+            </div>
+
+            <div class="box_clientes box_rel">
+                <label class="labels">Funcionário:</label> <input type="text" class="inputs" id="set_cfunc" readonly>
+                <label class="labels">Retoque:</label> <input type="text" class="inputs" id="set_cretoque" readonly>
+            </div>
+
+            <div class="box_clientes">
+                <label class="labels">Data Retoque:</label> <input type="text" class="inputs" id="set_cdtretoque" readonly>
+                <label class="labels">Valor:</label> <input type="text" class="inputs" id="set_cvalor" readonly>
+            </div>
+            <div class="box_clientes">
+                <button class="buttons" id="rel_btn_fechar_cont">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/relatorio_buttons.js"></script>

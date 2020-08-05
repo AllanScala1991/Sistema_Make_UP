@@ -1,0 +1,85 @@
+<div class="clientes_menu">
+    <div class="cliente_nav">
+        <div class="button_div" id="btn_add_cliente">
+            <img class="btn_img" src="../img/add_user.png">Novo Cliente
+        </div>
+        <div class="button_div" id="btn_edit_cliente">
+            <img class="btn_img" src="../img/edit_user.png">Editar Cliente
+        </div>
+        <div class="button_div" id="btn_show_cliente">
+            <img src="../img//users.png" class="btn_img">Exibir Clientes
+        </div>
+    </div>
+    <div class="cliente_info">
+        <div class="registros">
+            <div class="container_name" id="container_clientes_name">
+                <h1 class="titulos_container">Clientes</h1>
+            </div>
+            <fieldset class="fieldset_clientes" id="field_new_cliente">
+                <span>
+                    <label class="titles">Cadastro de Clientes</label>
+                    <br><br>
+                    <label for="nome" class="labels">Nome Completo:</label><input type="text" name="nome" class="inputs" id="new_name">
+                    <label for="cpf" class="labels">CPF:</label><input type="text" name="cpf" class="inputs mask_cpf" id="new_cpf"><br><br><br>
+                    <label for="telefone" class="labels">Telefone:</label><input type="text" name="telefone" class="inputs" id="new_tel">
+                    <label for="rg" class="labels">RG:</label><input type="text" name="rg" class="inputs mask_rg" id="new_rg"><br><br><br>
+                    <label for="email" class="labels">Email:</label><input type="text" name="email" class="inputs" id="new_email">
+                    <label for="endereco" class="labels">Endereço:</label><input type="text" name="endereco" class="inputs" id="new_end"><br><br><br>
+                    <label for="data_nasc" class="labels">Data de Nascimento:</label><input type="text" name="data_nasc" class="inputs mask_data" id="new_date">
+                    <label for="users_select" class="labels">Funcionário:</label><input type="text" class="inputs" id="users_select"><br><br><br>
+                    <label for="obs_cliente" class="labels">Observações:</label><br><textarea name="obs_cliente" id="obs_cliente"></textarea><br>
+                    <div class="btn_cliente_container">
+                        <button class="buttons" id="btn_save_new_client">Salvar</button>
+                    </div>
+                </span>
+            </fieldset>
+            <fieldset class="fieldset_clientes" id="field_edit_cliente">
+                <span>
+                    <label class="titles titles2">Localizar Clientes</label>
+                    <input type="text" class="inputs" id="nome_cliente_editar" placeholder="Digite o nome do cliente">
+                    <button class="buttons" id="btn_edit_search_cliente">Buscar</button>
+                    <br><br>
+                    <label for="nome" class="labels">Nome Completo:</label><input type="text" name="nome" class="inputs" id="edit_name" >
+                    <label for="cpf" class="labels">CPF:</label><input type="text" name="cpf" class="inputs mask_cpf" id="edit_cpf" ><br><br><br>
+                    <label for="telefone" class="labels">Telefone:</label><input type="text" name="telefone" class="inputs" id="edit_tel" >
+                    <label for="rg" class="labels">RG:</label><input type="text" name="rg" class="inputs mask_rg" id="edit_rg" ><br><br><br>
+                    <label for="email" class="labels">Email:</label><input type="text" name="email" class="inputs" id="edit_email" >
+                    <label for="endereco" class="labels">Endereço:</label><input type="text" name="endereco" class="inputs" id="edit_end" ><br><br><br>
+                    <label for="data_nasc" class="labels">Data de Nascimento:</label><input type="text" name="data_nasc" class="inputs mask_data" id="edit_date" >
+                    <label for="users_select" class="labels">Funcionário:</label><input type="text" class="inputs" id="edit_users_select"><br><br><br>
+                    <label for="obs_cliente" class="labels">Observações:</label><br><textarea name="obs_cliente" id="edit_obs_cliente" ></textarea><br>
+                    <div class="btn_cliente_container">
+                        <button class="buttons" id="btn_update_client">Atualizar</button>
+                        <button class="buttons" id="btn_delete_client">Deletar</button>
+                    </div>
+                </span>
+            </fieldset>
+            <fieldset class="fieldset_clientes" id="field_show_cliente">
+                <div class="show_container_busca">
+                    <label class="labels">Busca por nome:</label>
+                    <input type="text" class="inputs" placeholder="Digite o nome do cliente" id="show_name_cliente">
+                    <label class="labels">Busca por CPF:</label>
+                    <input type="text" class="inputs mask_cpf" placeholder="Digite o CPF" id="show_cpf_cliente">
+                    <button class="buttons" id="show_btn_buscar">Buscar</button>
+                    
+                </div>
+                <div class="table_show_results">
+                    <table class="tables">
+                        <tr>
+                            <th>Nome</th>
+                            <th>CPF</th>
+                            <th>Telefone</th>
+                            <th>RG</th>
+                            <th>Email</th>
+                            <th>Endereço</th>
+                            <th>Dt Nascimento</th>
+                            <th>Funcionário</th>
+                            <th>Observação</th>
+                        </tr>
+                    </table>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</div>
+<script src="../js/clientes_buttons.js"></script>

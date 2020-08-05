@@ -1,0 +1,40 @@
+<div class="clientes_menu">
+    <div class="agenda_container">
+        <div class="agenda_top_container">
+            <label class="labels">Selecione uma data:</label>
+            <input type="date" name="date_select" id="date_id">
+            <button class="calendar_buttons" id="btn_abrir_agend">Agendar</button>
+        </div>
+
+        <div class="agenda_center_container">
+           <table class="agenda_table">
+               <tr>
+                   <th>Horário</th>
+                   <th>Cliente</th>
+                   <th>Descrição</th>
+                   <th>Funcionário</th>
+                   <th>Ações</th>
+               </tr>
+           </table>
+        </div>
+        
+    </div>
+
+    <div class="agendamento_container">
+        <div class="novo_agendamento_container">
+            <div class="box_agendamento"><h3 class="title_agd">Agendar Horários</h3></div>
+            <div class="box_agendamento"><label class="agenda_label">Horário: </label><input class="agd_input mask_hrs" id="horario_value" type="text"></div>
+            <div class="box_agendamento"><label class="agenda_label">Cliente: </label><input class="agd_input" id="cliente_value" type="text"></div>
+            <div class="box_agendamento"><label class="agenda_label">Serviço:</label><input class="agd_input" id="servico_value" type="text"></div>
+            <div class="box_agendamento"><label class="agenda_label">Funcionário:</label><input class="agd_input" id="funcionario_value" type="text"></div>
+            <div class="box_agendamento">
+                <button class="buttons" id="btn_salvar_agd">Salvar</button>
+                <button class="buttons" id="btn_fechar_agd">Fechar</button>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+<script src="../js/agenda.js"></script>

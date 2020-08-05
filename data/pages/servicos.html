@@ -1,0 +1,138 @@
+<div class="clientes_menu">
+    <div class="cliente_nav">
+
+        <div class="cliente_nav">
+            <div class="button_div" id="btn_add_servico">
+                <img class="btn_img" src="../img/add_serv.png" alt="job logo">Novo Serviço
+            </div>
+            <div class="button_div" id="btn_edit_servico">
+                <img class="btn_img" src="../img/edit_user.png" alt="job logo">Editar Serviço
+            </div>
+            <div class="button_div" id="btn_cadastro_servico">
+                <img class="btn_img" src="../img/service_add.png" alt="job logo">Novo Item.
+            </div>
+            <div class="button_div" id="btn_mostrar_itens">
+                <img class="btn_img" src="../img/edit_item.png" alt="job logo">Mostrar Itens.
+            </div>
+        </div>
+
+    </div>
+    
+
+    <div class="servicos_info">
+        <div class="registros">
+            <div class="container_name" id="container_servicos_name">
+                <h1 class="titulos_container">Serviços</h1>
+            </div>
+            <fieldset class="fieldset_servicos" id="field_new_servico">
+                <span>
+                    <label class="titles">Cadastro de Serviços</label>
+                    <br><br>
+                    <label class="labels">Cliente:</label> <label class="labels" id="cliente_name_select"></label>
+                    <label class="labels">Data:</label> <label class="labels" id="data_cadastro"></label><br><br>
+                    <label class="labels">Buscar cliente por:</label>
+                    <select name="serv_select" id="serv_select" class="users_select">
+                        <option value="" selected disabled hidden>Selecione um valor para busca</option>
+                        <option value="Nome">Nome</option>
+                        <option value="Cpf">CPF</option>
+                        <option value="Rg">RG</option>
+                        <option value="Telefone">Telefone</option>
+                    </select>
+                    <input type="text" class="inputs" id="serv_search_input" readonly>
+                    <button class="buttons" id="localiza_cliente_servico">Buscar</button><br><br>
+                    <label class="labels">Serviços:</label>
+                    <select name="item_serv_select" id="item_serv_select" class="users_select">
+                        <option value="" selected disabled hidden>Selecione um serviço</option>
+                    </select>
+                    <label class="labels">Saúde:</label>
+                    <select name="item_saude_select" id="item_saude_select" class="users_select">
+                        <option value="" selected disabled hidden>Selecione uma restrição</option>
+                    </select><br><br>
+                    <button class="buttons btn" id="add_serv_item">Adicionar</button>
+                    <button class="buttons btn btn3" id="clear_serv_item">Limpar</button>
+                    <button class="buttons btn2" id="add_saude_item">Adicionar</button>
+                    <button class="buttons btn" id="clear_saude_item">Limpar</button>
+                    <div class="itens_container" id="itens_servicos">
+                        <ul id="servicos_list">
+                        </ul>
+                    </div>
+                    <div class="itens_container"  id="itens_saude">
+                        <ul id="saude_list">
+                        </ul>
+                    </div>
+                    <div id="separador"> 
+                    </div><br>
+                    <label class="labels">Funcionário:</label>
+                    <input type="text" class="inputs" id="novo_serv_funcionario">
+                    <label class="labels_serv">Valor:</label>
+                    <input type="text" class="inputs mask_valor" id="valor_serv"><br><br>
+                    <label class="labels">Retoque ?</label>
+                    <select name="item_serv_select" id="item_func_select" class="retoque_select">
+                        <option value="" selected disabled hidden>Sim/Não</option>
+                        <option value="Sim">Sim</option>
+                        <option value="Não">Não</option>
+                    </select>
+                    <input type="text" class="inputdate mask_data" id="retoque_data" placeholder="dd/mm/aaaa"><br><br>
+                    <div class="btn_cliente_container">
+                        <button class="buttons" id="btn_save_new_serv">Salvar</button>
+                    </div>
+                </span>
+            </fieldset>
+            <fieldset class="fieldset_servicos" id="field_edit_servico">
+                <span>
+                    <label class="titles">Localizar Serviços</label><br><br>
+                    <label class="labels">Data da venda:</label>
+                    <input type="text" class="inputs mask_data" placeholder="Digite a data da venda 00/00/0000" id="data_busca_venda">
+                    <button class="buttons" id="btn_busca_venda_data">Buscar</button>
+                    <button class="buttons" id="btn_salva_edita_servico">Salvar</button><br><br>
+                    <div class="table_container">
+                        <table class="servicos_table">
+                            <tr class="table_titulos">
+                                <th>Data</th>
+                                <th>Cliente</th>
+                                <th>Serviços</th>
+                                <th>Saúde</th>
+                                <th>Retoque</th>
+                                <th>Data Retoque</th>
+                                <th>Funcionário</th>
+                                <th>Valor</th>
+                                <th>Ações</th>
+                            </tr>
+                        </table>
+                    </div>
+                </span>
+            </fieldset>
+            <fieldset class="fieldset_servicos" id="field_novo_cadastro_servico">
+                <span>
+                    <label class="titles">Cadastro de Serviços Realizados</label><br><br>
+                    <label class="labels">Nome do Serviço:</label>
+                    <input type="text" class="inputs" id="nome_novo_servico">
+                    <label class="labels">Categoria:</label>
+                    <select name="categ_select" id="categ_select" class="users_select">
+                        <option value="" selected >Selecione uma categoria</option>
+                        <option value="Serviços">Serviços</option>
+                        <option value="Saúde">Saúde</option>
+                    </select><br><br>
+                    <label class="labels">Descrição:</label>
+                    <textarea cols="30" rows="100" id="novo_item_desc"></textarea><br><br>
+                    <div class="btn_cliente_container">
+                        <button class="buttons" id="btn_salvar_novo_itemservico">Salvar</button>
+                    </div>
+                </span>
+            </fieldset>
+            <fieldset class="fieldset_servicos" id="fieldset_mostrar_item">
+                <div class="div_table_items">
+                    <table class="table_items">
+                        <tr>
+                            <th>Nome</th>
+                            <th>Categoria</th>
+                            <th>Descrição</th>
+                            <th>Ações</th>
+                        </tr>
+                    </table>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</div>
+<script src="../js/servicos_buttons.js"></script>

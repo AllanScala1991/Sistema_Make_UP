@@ -1,0 +1,22 @@
+{
+  "name": "sistema-makeup",
+  "version": "1.0.0",
+  "description": "Aplicação para cadastros de clientes e serviços",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-win": "electron-packager . --platform=win32  --archi=ia32 --icon=C:/Users/notebook/Documents/Allan/Projeto/data/img/icon.ico"
+  },
+  "author": "Allan Scala",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^9.0.3",
+    "electron-packager": "^15.0.0"
+  },
+  "dependencies": {
+    "jQuery": "^1.7.4",
+    "jquery": "^3.5.1",
+    "jquery-mask-plugin": "^1.14.16",
+    "nedb": "^1.8.0"
+  }
+}
