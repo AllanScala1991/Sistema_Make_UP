@@ -10,7 +10,7 @@
   "author": "Allan Scala",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^9.0.3",
+    "electron": "^9.3.0",
     "electron-packager": "^15.0.0"
   },
   "dependencies": {
