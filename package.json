@@ -10,8 +10,8 @@
   "author": "Allan Scala",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^11.5.0",
-    "electron-packager": "^15.0.0"
+    "electron": "^24.1.2",
+    "electron-packager": "^17.1.1"
   },
   "dependencies": {
     "jQuery": "^1.7.4",
